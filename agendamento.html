@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>Clinica Hofman</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Marcos Moreira"/>
+		<meta name="keywords" content="Clinica, médico, saúde"/>
+		<meta name="description" content="Clinica Hofman - Sua saúde é nossa prioridade"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" type="text/css" href="estilo.css"/>
+	</head>
+	<body>
+		<header>
+			<img src="img/Clinica.png" alt="banner contendo o nome da clinica hofman com o seu lema:Sua saúde Nossa prioridade"/>
+			</header>
+			<nav>
+				<a href="index.html"> HOME </a>
+				<a href="index.html#pag-informacoes"> INFORMAÇÕES </a>
+				<a href="index.html#pag-especialidades"> ESPECIALIDADES </a>
+				<a href="index.html#pag-instalacoes"> INSTALAÇÕES </a>
+				<a href="#"> AGENDAMENTO </a>
+			</nav>	
+			
+		<section id="pag-agenda">
+			<h1>Agendamento</h1>
+		
+			<p>Agende por aqui a sua consulta!</p>
+
+			<form name="agendamento de consultas" method="" action="">
+				<label for="nome">Nome</label>
+				<input id="nome" type="text" name="nome_completo" placeholder="Nome completo" required />
+
+				<label for="telefone">Telefone Celular</label><br/>
+				<input id="telefone" type="tel" name="telefone"  placeholder="(99)9999-9999" pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$"/>
+
+				<label for="email" >E-mail:</label>
+				<input id="email" type="email" name="email"  placeholder="nome@email.com">
+
+
+				<label for="senha">Senha</label>
+				<input id="senha" type="password" name="senha"  placeholder="somente números"><br>
+
+				<div id="data-hora">
+					<div id="data-hora-es">
+						<label for="data">Data</label>
+						<input id="data" type="date" name="data"/>
+					</div>
+
+					<div id="data-hora-es">
+						<label for="data">Hora</label>
+						<input id="hora" type="time" name="hora"/>
+					</div>
+				
+					<div id="data-hora-es">
+						<label for="consultas">Nº de consultas</label>
+						<input id="consultas" type="number" name="consultas" min="1" max="10" step="1" />
+					</div>
+				</div>
+
+				<label for="idade">Idade</label>
+				<select id="idade" name="idade" required>
+					<option value="">Selecione</option>
+					<option value="0-10">0-10</option>
+					<option value="11-20">11-20</option>
+					<option value="21-30">21-30</option>
+					<option value="31+">31+</option>
+				</select>
+
+				<fieldset name="sexo" >
+					<legend>Sexo</legend>
+					<input id="masc" type="radio" name="sexo" value="masc" /><label for="masc">Masculino</label>
+					<input id="fem" type="radio" name="sexo" value="fem" /><label for="fem">Feminino</label>
+				</fieldset>	
+
+				<fieldset name="especialidades">
+					<legend>Especialidade</legend>
+					<input id="card" type="checkbox" name="especialidade" value="cardiologia"> <label for="card">Cardiologia</label><br>
+					<input id="gas" type="checkbox" name="especialidade" value="gastrologia"> <label for="gas">Gastrologia</label><br>
+					<input id="ofta" type="checkbox" name="especiliade" value="oftamologia"> <label for="ofta">Oftamologia</label><br>
+					<input id="derma" type="checkbox" name="especialidade" value="dermatologia"> <label for="derma">Dermatologia</label><br>
+				</fieldset>
+
+				<label for="msg">Mensagem</label>
+				<textarea id="msg" cols="52" rows="4">
+				</textarea>
+
+				<div id="btn-form">
+					<input type="submit" name="bta-agendar" value="AGENDAR" />
+					<input type="reset" name="bta-cancelar" value="CANCELAR" />
+				</div>
+
+			</form>
+
+		</section>	
+		
+		<footer>
+				
+			<p>Desenvolvido por <a href="https://www.linkedin.com/in/marcos-vin%C3%ADcius-9a0167214/" target="_blank">Marcos Santos</a> e <a href="https://store.steampowered.com/app/570/Dota_2/?l=portuguese"> Rafael dos Santos</a>- 2022</p>
+				
+		</footer>
+
+</body>
+</html>
